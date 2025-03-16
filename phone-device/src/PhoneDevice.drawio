@@ -1,0 +1,48 @@
+<mxfile host="65bd71144e">
+    <diagram id="qllMIklnIQD2eemIEGMC" name="Page-1">
+        <mxGraphModel dx="904" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="75" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=diamond;startFill=1;strokeWidth=2;" parent="1" source="72" target="73" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;font&gt;#Device&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font&gt;+ brand: string 1 {read only}&lt;/font&gt;&lt;/p&gt;&lt;font&gt;&amp;nbsp;+&lt;font&gt;&amp;nbsp;model: string 1 {read only}&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp;+ color: string&lt;/font&gt;&lt;br&gt;&lt;font&gt;&amp;nbsp;+ osVersion: string&lt;br&gt;&lt;/font&gt;&lt;font&gt;&amp;nbsp;+ memory: string&lt;/font&gt;&lt;br&gt;&lt;font&gt;&amp;nbsp;+ storage: string&lt;/font&gt;&lt;br&gt;&lt;font&gt;&amp;nbsp;+ processor: string&lt;/font&gt;&lt;hr&gt;&lt;font&gt;&amp;nbsp;+ Device(brand, model)&lt;/font&gt;&lt;br&gt;&lt;font&gt;&amp;nbsp;+ Device(brand, model, color, osVersion, memory, storage, processor)&lt;/font&gt;&lt;br&gt;&lt;font&gt;&amp;nbsp;+ powerOn(): void&lt;/font&gt;&lt;br&gt;&lt;font&gt;&amp;nbsp;+ powerOff(): void&lt;/font&gt;&lt;br&gt;&lt;font&gt;&amp;nbsp;+ reboot(): void&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp;+ update(): void&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp;+ getActiveApp(): App&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp;+ setActiveApp(app): void&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp;+ closeApp(app): void&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp;+ appAdd(app): void&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp;+ appRemove(app): void&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&amp;nbsp;+ isAppOpen(app): boolean&lt;/font&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="20" width="380" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=2;dashed=1;" edge="1" parent="1" source="82" target="73">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="490" y="160" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="73" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;#App&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Open(): void&lt;br&gt;+ Close(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Update(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ versionCheck(): string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="20" width="190" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=default;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;align=left;verticalAlign=top;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="260" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;#Dialer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- device: Device&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ Dialer(device)&lt;div&gt;&amp;nbsp;+ call(number: string): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ answer(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ hangup(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ openVoicemail(): void&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="210" width="190" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="" style="edgeStyle=none;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=2;dashed=1;" edge="1" parent="1" source="90" target="73">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="700" y="160" as="sourcePoint"/>
+                        <mxPoint x="795" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="90" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;#Navigator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- device: Device&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ Navigator(device)&lt;div&gt;&amp;nbsp;+ navigate(address: string): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ addTap(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ closeTab(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ refresh(): void&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="210" width="190" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=2;dashed=1;" edge="1" parent="1" source="92" target="73">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="917" y="160" as="sourcePoint"/>
+                        <mxPoint x="850" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;#Player&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- device: Device&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ Player(device)&lt;div&gt;&amp;nbsp;+ play(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ pause(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ stop(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ rewind(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ fastForward(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ next(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ previous(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ mute(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ unmute(): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ setVolume(volume: int): void&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ setSubtitle(subtitle: string): void&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="917" y="210" width="190" height="240" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
